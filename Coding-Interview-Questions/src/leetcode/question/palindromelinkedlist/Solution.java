@@ -1,0 +1,73 @@
+package leetcode.question.palindromelinkedlist;
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+
+
+
+/* Java program to check if linked list is palindrome recursively */
+import java.util.*; 
+
+class Solution { 
+	public static void main(String args[]) 
+	{ 
+		Node one = new Node(1); 
+		Node two = new Node(2); 
+		Node three = new Node(3); 
+		Node four = new Node(4); 
+		Node five = new Node(3); 
+		Node six = new Node(2); 
+		Node seven = new Node(1); 
+		one.ptr = two; 
+		two.ptr = three; 
+		three.ptr = four; 
+		four.ptr = five; 
+		five.ptr = six; 
+		six.ptr = seven; 
+		boolean condition = isPalindrome(one); 
+		System.out.println("isPalidrome :" + condition); 
+	} 
+	static boolean isPalindrome(Node head) 
+	{ 
+
+		Node slow = head; 
+		boolean ispalin = true; 
+		Stack<Integer> stack = new Stack<Integer>(); 
+
+		while (slow != null) { 
+			stack.push(slow.data);  // pushing to stack
+			slow = slow.ptr; 
+		} 
+
+		while (head != null) { 
+
+			int i = stack.pop();  // popping fromm stack
+			if (head.data == i) { 
+				ispalin = true; 
+			} 
+			else { 
+				ispalin = false; 
+				break; 
+			} 
+			head = head.ptr;  // move to next node
+		} 
+		return ispalin; 
+	} 
+} 
+
+class Node { 
+	int data; 
+	Node ptr; 
+	Node(int d) 
+	{ 
+		ptr = null; 
+		data = d; 
+	} 
+} 

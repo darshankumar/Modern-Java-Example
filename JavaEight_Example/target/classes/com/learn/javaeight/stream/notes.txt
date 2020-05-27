@@ -1,0 +1,12 @@
+stream
+
+Intermediate Operation
+
+toMap
+Filter
+sorted
+
+Terminal Operations
+
+reduce
+collect
