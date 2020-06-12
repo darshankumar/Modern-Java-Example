@@ -1,4 +1,4 @@
-package leetcode.question.numberofislands;
+package leetcode.question.number_of_islands;
 class Solution {
     public static int numIslands(char[][] grid) {
     	if(grid==null || grid.length==0 ||grid[0].length==0) {
