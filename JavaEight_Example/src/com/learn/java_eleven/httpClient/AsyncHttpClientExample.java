@@ -18,7 +18,9 @@ public class AsyncHttpClientExample {
 				HttpResponse.BodyHandlers.ofString());
 
 		System.out.println(output.get().body());
-
+		
+		
+				
 	}
 
 }
