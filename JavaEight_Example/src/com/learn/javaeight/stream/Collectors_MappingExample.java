@@ -6,8 +6,6 @@ package com.learn.javaeight.stream;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import com.learn.javaeight.funcprogramming.Instructors;
 import com.learn.javaeight.funcprogramming.Instructor;
 

@@ -2,7 +2,6 @@ package com.learn.javaeight.stream;
 
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
-import java.util.Random;
 import java.util.stream.IntStream;
 
 public class NumericStreamAggregateExample {
