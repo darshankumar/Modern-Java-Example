@@ -1,0 +1,7 @@
+What is Singleton class. Write code ?
+-> Private Constructor
+-> Static Method getInstance()
+
+ThreadSafe Singleton class:
+Double Check Lock - Thread Safe Singleton Class.
+Bill Pugh Singleton Implementaion 
